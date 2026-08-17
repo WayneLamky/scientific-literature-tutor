@@ -19,6 +19,12 @@ Obsidian capture. The core reader must still work when either service is
 unavailable, and API keys or vault paths must never be embedded in generated
 HTML.
 
+Before enabling optional integrations, disclose that selected paper context is
+sent to the user's subscription-backed model. Do not send unpublished,
+confidential, or sensitive manuscripts without the user's explicit permission.
+Treat Obsidian capture as a local desktop feature; hosted pages, mobile browsers,
+and sandboxed environments may not have filesystem access.
+
 Unless the user asks otherwise, explain in Chinese and preserve important English scientific terms beside their Chinese translations.
 
 ## Workflow
@@ -53,6 +59,9 @@ Never call dataset construction “validation.” Separate these two stages expl
 - Use `scripts/extract_figures.py` with a JSON crop manifest when convenient.
 - Label original paper figures as source figures. Label any newly drawn schematic as an explanatory reconstruction.
 - Do not alter quantitative values in source figures.
+- Before distributing an HTML reader publicly, verify that the paper license
+  permits redistribution of embedded source figures. Keep restricted figures
+  local or replace them with permitted links or original explanatory diagrams.
 
 ### 4. Explain every main figure with the same logic
 

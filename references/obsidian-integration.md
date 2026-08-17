@@ -27,6 +27,16 @@ registry to identify the entry marked open. On macOS the registry is normally
 paths, and open flags; do not use vault discovery as permission to inspect note
 contents.
 
+Registry locations and open-state behavior vary by operating system and
+Obsidian version. Prefer an explicit config path on unsupported platforms. If
+auto-detection is unavailable or multiple vaults are marked open, ask the user
+to identify the target instead of scanning the filesystem.
+
+Direct Vault writes require a local process with filesystem access. Do not
+promise this integration from a hosted static site or mobile browser. Keep the
+target restricted to the configured paper directory, write atomically, and
+avoid modifying unrelated notes or Obsidian settings.
+
 ## Capture contract
 
 The browser sends only:
