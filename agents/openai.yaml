@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Tutor"
+  short_description: "Teach scientific papers with GPT and Obsidian"
+  default_prompt: "Use $scientific-literature-tutor to teach me this scientific paper figure by figure and create a bilingual interactive HTML reader with GPT tutoring and optional Obsidian capture."
